@@ -1,0 +1,74 @@
+.nextprayer-container {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.nextprayer-container .bp5-section {
+    width: 180px;
+}
+
+.bp5-section-card.bp5-padded {
+    padding: 10px !important;
+}
+
+.nextprayer-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 150px;
+}
+
+.nextprayer-diff {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.nextprayer-wrapper {
+    text-align: right;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.prayer-more-btn > .bp5-icon{
+    color: #ffffff !important;
+}
+
+select {
+    max-width: 140px;
+    direction: rtl;
+}
+
+.location {
+    width: 150px;
+}
+
+.autocomplete {
+    direction: rtl;
+}
+
+.autocomplete  input {
+    padding: 0 13px !important;
+}
+
+/* .autocomplete-result-item {
+    direction: rtl !important;
+    text-align: right;
+} */
+
+ li > .ellipsis {
+    direction: rtl;
+    text-align: right !important;
+    padding: 0 13px;
+} 
+/* .location .wrapper:first-child {
+    background-color: transparent !important;
+} */
+
+.prayer-times-container {
+    direction: rtl;
+}

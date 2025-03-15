@@ -1,0 +1,279 @@
+@import "@blueprintjs/core/lib/css/blueprint.css";
+@import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+
+@font-face {
+  font-family: 'NotoKufiArabic';
+  src: local('NotoKufiArabic'), url(/public/fonts/NotoKufiArabic-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoNaskhArabic';
+  src: local('NotoNaskhArabic'), url(/public/fonts/NotoNaskhArabic-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'BalooBhaijaan2';
+  src: local('BalooBhaijaan2'), url(/public/fonts/BalooBhaijaan2-VariableFont_wght.ttf) format('truetype');
+}
+
+.credit-link {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    color: #09a79e !important;
+    font-size: 11px;
+} 
+
+/* The re-design */
+body {
+  background-color: hsla(206.3157894736842, 100.00%, 11.18%, 1.00);
+  background-image: url("/public/images/bg.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 100vh;
+}
+
+/* top nav */
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.w-layout-hflex {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.w-layout-vflex {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-block {
+  align-items: center;
+  gap: 20px;
+}
+
+/* footer */
+.top-visited-container {
+  position: fixed;
+  inset: auto 0% 0%;
+  padding-bottom: 30px;
+}
+.quick-link-docker {
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.link-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.link-image {
+  width: 45px;
+  height: 45px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 8px solid white;
+  background-color: white;
+}
+
+.link-text {
+  color: hsla(170.27027027027026, 24.34%, 83.26%, 1.00);
+  font-size: 12px;
+  line-height: 0px;
+  text-transform: capitalize;
+}
+
+.link-icon {
+  width: 45px;
+  height: 45px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 8px solid white;
+  background-color: white;
+  color: lightgray;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  display: block;
+  margin-top: 190px;
+  /* padding: 80px 30px; */
+  border-bottom: 1px none rgb(228, 235, 243);
+  /* background-color: rgba(19, 20, 20, 0.61); */
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  /* height: 340px; */
+}
+.hero-wrapper {
+  display: flex;
+  /* max-width: 750px; */
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+.hero-header {
+  font-family: NotoNaskhArabic, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.header-long {
+  font-size: 30px !important;
+}
+
+/* prayer times */
+
+.prayer-times-container {
+  position: fixed;
+  inset: 5px -10px auto auto;
+  display: block;
+  width: 400px;
+  max-width: 400px;
+  min-width: 400px;
+  padding: 5px;
+  background-color: rgba(19, 20, 20, 0.61);
+  text-align: left;
+  padding: 10px;
+}
+
+.prayer-header {
+  padding: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  align-items: center;
+}
+.prayer-list {
+  margin-top: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.time-card {
+  align-items: center;
+  text-align: center;
+}
+.time-card-next {
+  align-items: center;
+  color: rgb(1, 164, 162);
+  font-weight: 700;
+}
+
+
+/* day azkar */
+.day-azkar-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120px;
+  padding: 20px;
+  border-bottom: 1px none rgb(228, 235, 243);
+  background-color: rgba(19, 20, 20, 0.61);
+  backdrop-filter: blur(1px);
+  height: 340px;
+} 
+
+.azkar-scroll {
+  max-width: 650px;
+  min-width: 650px;
+  object-fit: fill;
+}
+
+.zekr-card {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  justify-content: space-between;
+  flex: 1 1 0%;
+  object-fit: fill;
+}
+
+.card-head {
+  padding: 0 20px;
+  justify-content:space-between;
+  flex-direction: row-reverse;
+}
+
+.azkar-tag-mini {
+  color:#cadfdb !important;
+}
+
+.content {
+  padding: 20px;
+  flex: 1 1 0%;
+  position: relative;
+}
+.card-foot {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.day-zekr-text {
+  /* font-family: "Noto Naskh Arabic"; */
+  font-size: 18px;
+  line-height: 34px;
+  text-align: right;
+  direction: rtl;
+}
+
+.azkar-tag {
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(202, 223, 219);
+  border-radius: 15px;
+  background-color: transparent;
+  color: rgb(202, 223, 219);
+  line-height: 10px;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+  padding: 9px 15px;
+  text-decoration: none;
+}
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.progress-bar {
+  height: 2px;
+  background-color: rgb(1, 164, 162) ;
+}
+
