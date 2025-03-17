@@ -70,7 +70,7 @@ function getHtmlPlugins(chunks) {
     return chunks.map(
         (chunk) =>
             new HTMLPlugin({
-                title: "Muslim Azkar",
+                title: "Azkari",
                 filename: `${chunk}.html`,
                 chunks: [chunk],
             })
