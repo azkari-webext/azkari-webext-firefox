@@ -1,7 +1,7 @@
 import './App.css';
 import NextPrayer from './prayer-times/next-prayer';
 import TopVisited from './components/most-visited';
-import RandomZekr from './main-zekr/random-zekr';
+import MainZekr from './main-zekr/main-zekr';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         </div>
             <NextPrayer />
         </div>
-        <RandomZekr/>
+        <MainZekr/>
         <TopVisited />
         <a className='credit-link' href="https://www.freepik.com/free-vector/mosque-cloud-islamic-new-year-greeting_5288906.htm">Background designed by starline / Freepik</a>
       </div>

@@ -1,6 +1,6 @@
-import myData from './data.json';
+import myData from '../../public/data/azkar.json';
 
-function RandomZekr() {
+function MainZekr() {
     const allAzkar = myData.azkar;
     const minute = new Date().getMinutes();
     const index = minute % allAzkar.length;
@@ -15,4 +15,4 @@ function RandomZekr() {
     );
 }
 
-export default RandomZekr;
+export default MainZekr;

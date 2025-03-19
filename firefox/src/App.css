@@ -3,23 +3,13 @@
 
 
 @font-face {
-  font-family: 'NotoKufiArabic';
-  src: local('NotoKufiArabic'), url(/public/fonts/NotoKufiArabic-VariableFont_wght.ttf) format('truetype');
-}
-
-@font-face {
   font-family: 'NotoNaskhArabic';
   src: local('NotoNaskhArabic'), url(/public/fonts/NotoNaskhArabic-VariableFont_wght.ttf) format('truetype');
 }
 
-@font-face {
-  font-family: 'BalooBhaijaan2';
-  src: local('BalooBhaijaan2'), url(/public/fonts/BalooBhaijaan2-VariableFont_wght.ttf) format('truetype');
-}
-
 .credit-link {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     left: 10px;
     color: #09a79e !important;
     font-size: 11px;
@@ -33,10 +23,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  font-family: sans-serif;
+  font-family: NotoNaskhArabic, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  min-height: 100vh;
 }
 
 /* top nav */
@@ -128,7 +117,7 @@ body {
 .hero {
   position: relative;
   display: block;
-  margin-top: 190px;
+  margin-top: 210px;
   /* padding: 80px 30px; */
   border-bottom: 1px none rgb(228, 235, 243);
   /* background-color: rgba(19, 20, 20, 0.61); */
