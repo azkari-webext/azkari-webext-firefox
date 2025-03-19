@@ -3,7 +3,6 @@ import './next-prayer.css';
 import { useEffect, useState } from 'react';
 import { DEFAULT_CITY_DATA, monthNames, ONE_DAY, ONE_HOUR, ONE_MINUTE, prayerNames } from '../components/constants';
 import UserLocation, { CityData } from '../components/user-location';
-import { useHasFocus } from '../components/utils';
 import { readData, storeData } from '../components/browser-utils';
 
 function NextPrayer() {
@@ -35,20 +34,12 @@ function NextPrayer() {
 
     useEffect(() => {
         updateClosestPrayerInfo();
+        // update diff every second
+        const interval = setInterval(updateClosestPrayerInfo, 1000);
+        // Clean up the interval when the component unmounts
+        return () => clearInterval(interval);
     }, [prayerTimes])
 
-
-    //
-    const focus = useHasFocus();
-    console.log('focus', focus);
-
-    useEffect(() => {
-        console.log('focus changed');
-        if(focus) {
-            updateClosestPrayerInfo();
-        }
-    },[focus]);
-    //
 
     function callPrayerTimesApi(cityData: CityData) {
         console.log("calling API....");
@@ -88,7 +79,6 @@ function NextPrayer() {
         if (!prayerTimes?.timings) {
             return;
         }
-
         const keyNames = Object.keys(prayerNames);
         var recentPrayer = '';
         var recentDiff = ONE_HOUR * 24; // max so it will be replaced in first round
