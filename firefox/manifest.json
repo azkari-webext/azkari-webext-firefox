@@ -2,7 +2,8 @@
     "version": "1.0.0",
     "manifest_version": 3,
     "name": "Azkari Extension",
-    "description": "Extension built with React and TypeScript",
+    "description": "Update new tab page to include Muslim Zekr",
+    "homepage_url": "https://github.com/azkari-webext/azkari-webext-firefox",
     "permissions": [
       "topSites",
       "storage"
