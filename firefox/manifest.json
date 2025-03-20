@@ -12,7 +12,12 @@
         "newtab": "js/index.html"
       },
       "icons": {
-        "48": "logo48.png",
-        "96": "logo96.png"
+        "48": "js/logo48.png",
+        "96": "js/logo96.png"
+      },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "azkari@webext.com"
       }
+    }
 }

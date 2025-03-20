@@ -1,6 +1,6 @@
 {
-  "name": "react-chrome-ext",
-  "version": "0.1.0",
+  "name": "azkari-web-ext",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@blueprintjs/core": "^5.10.3",
