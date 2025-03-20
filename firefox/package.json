@@ -1,6 +1,6 @@
 {
   "name": "azkari-web-ext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@blueprintjs/core": "^5.10.3",
