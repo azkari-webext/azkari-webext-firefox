@@ -19,3 +19,7 @@ npm run build
 - Browse to the `firefox/dist` folder and choose `manifest.json'
 
 ![](Screenshot_v0.1.0.png)
+
+## Credits
+- The background image is [designed by starline at Freepik](https://www.freepik.com/free-vector/mosque-cloud-islamic-new-year-greeting_5288906.htm) 
+- The world cities used are extracted with the help of [this dataset](https://www.kaggle.com/datasets/bpmtips/all-cities-and-towns-extract-from-osm)
