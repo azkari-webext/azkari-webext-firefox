@@ -2,6 +2,9 @@
 Azkar extension for web browser
 Update the new tab page to include Muslim zekr and prayer time (adding day/night azkar soon)
 
+**Add-on link on Firefox** https://addons.mozilla.org/en-US/firefox/addon/azkari-extension/ 
+
+
 ## Setup
 ### 1. Setup Node.js
 Follow the guide on https://nodejs.org/en/download
